@@ -1,0 +1,71 @@
+*{
+        margin:0;
+            padding:0;
+                box-sizing:border-box;
+                    font-family:Arial,sans-serif;
+                    }
+
+                    body{
+                        width:100vw;
+                            height:100vh;
+                                overflow:hidden;
+                                    display:flex;
+                                        justify-content:center;
+                                            align-items:center;
+                                                background:linear-gradient(-45deg,#ff4b91,#ff7eb3,#7b68ee,#00c9ff);
+                                                    background-size:400% 400%;
+                                                        animation:bgMove 10s ease infinite;
+                                                        }
+
+                                                        @keyframes bgMove{
+                                                            0%{background-position:0% 50%;}
+                                                                50%{background-position:100% 50%;}
+                                                                    100%{background-position:0% 50%;}
+                                                                    }
+
+                                                                    .card{
+                                                                        width:330px;
+                                                                            padding:35px;
+                                                                                border-radius:25px;
+                                                                                    background:rgba(255,255,255,.15);
+                                                                                        backdrop-filter:blur(15px);
+                                                                                            text-align:center;
+                                                                                                color:white;
+                                                                                                    box-shadow:0 0 40px rgba(255,255,255,.3);
+                                                                                                        animation:float 3s ease-in-out infinite;
+                                                                                                        }
+
+                                                                                                        .card h1{
+                                                                                                            font-size:42px;
+                                                                                                                margin-bottom:15px;
+                                                                                                                    text-shadow:0 0 20px #fff;
+                                                                                                                    }
+
+                                                                                                                    .card p{
+                                                                                                                        font-size:18px;
+                                                                                                                        }
+
+                                                                                                                        @keyframes float{
+                                                                                                                            0%{transform:translateY(0);}
+                                                                                                                                50%{transform:translateY(-12px);}
+                                                                                                                                    100%{transform:translateY(0);}
+                                                                                                                                    }
+
+                                                                                                                                    .heart{
+                                                                                                                                        position:absolute;
+                                                                                                                                            color:#ff4b91;
+                                                                                                                                                font-size:22px;
+                                                                                                                                                    animation:heart 6s linear forwards;
+                                                                                                                                                    }
+
+                                                                                                                                                    @keyframes heart{
+                                                                                                                                                        0%{
+                                                                                                                                                                transform:translateY(0) scale(0);
+                                                                                                                                                                        opacity:1;
+                                                                                                                                                                            }
+
+                                                                                                                                                                                100%{
+                                                                                                                                                                                        transform:translateY(-110vh) scale(1.6);
+                                                                                                                                                                                                opacity:0;
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                    }
